@@ -50,14 +50,14 @@
   
 	<script>
     	const formulario = document.getElementById("formulario");
-		var inputs = document.querySelectorAll("#formulario input");
+		const inputs = document.querySelectorAll("#formulario input");
 		
 		formulario.addEventListener("keyup", function(event){
 			var numValido = 0;
 				inputs.forEach(function(elemento, indice, array){
 					if(elemento.validity.valid){
 					numValido++;
-				}
+					}
 				})
 			if(numValido ==0){
 				const progress = document.querySelector('.progress-done');
